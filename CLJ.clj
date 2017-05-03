@@ -12,7 +12,19 @@
                         )
                     )
                 )
-            
+
             )
         )
     )
+
+(defn stringToNumList [input_string]
+    (if (empty? input_string) 
+        '()
+        (cons (int (first input_string)) (stringToNumList (rest input_string)))
+    )
+
+(defn charListToInt [input_list]
+    (if (empty? input_list) 
+        '()
+        (cons (int (first input_list)) (charListToInt (rest input_list)))
+)
