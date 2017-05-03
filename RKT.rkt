@@ -9,7 +9,7 @@
           )
       )
   )
-
+r
 
 (define (stringToNumList input)
   (if (null? input)
